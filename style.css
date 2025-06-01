@@ -110,3 +110,47 @@ main {
       }
     }
 }
+
+.list {
+    .item {
+        background: var(--background-secondary);
+        padding: 1.2rem;
+        margin-bottom: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 500;
+        border-radius: 1.2rem;
+        box-shadow: 0 2px 6px rgba(8, 11, 18, 0.2);
+
+        div {
+            display: flex;
+            gap: 1.2rem;
+            align-items: center;
+        }
+        input {
+            display: none;
+        }
+
+        .custom-checkbox {
+            width: 1.6rem;
+            height: 1.6rem;
+            border: 1px solid var(--border-primary);
+            border-radius: 0.6rem;
+        }
+
+        div:has(input:checked) {
+            .custom-checkbox{
+                background-color: var(--color-brand);
+                border: 1px solid var(--color-brand);
+                transition: 0.2s;
+            }
+
+            label {
+                text-decoration: line-through;
+            }
+        }
+    }
+}
