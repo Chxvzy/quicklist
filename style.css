@@ -59,5 +59,11 @@ header {
         color: var(--content-primary);
         line-height: 3.2rem;
     }
+
+
 }
 
+main {
+    max-width: 62.7rem;
+    margin-inline: auto;
+    }
