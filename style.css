@@ -189,7 +189,16 @@ main {
         display: flex;
         align-items: center;
         gap: 0.8rem;
+    }
 
+    i {
+        font-size: 2rem;
+    }
+
+    button {
+        border: none;
+        background: none;
+        color: var(--always-white);
     }
 
 }
