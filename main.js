@@ -41,7 +41,7 @@ function removeItem(itemName) {
   const divWarning = document.querySelector(".warning")
   
   divWarning.classList.remove("hide-warning")
-  
+
   setTimeout(() => {
     divWarning.classList.add("hide-warning")
   }, 4000)
@@ -51,4 +51,8 @@ function removeItem(itemName) {
   }
 
   showItemsList()
+}
+
+function addHideWarningClass() {
+  document.querySelector(".warning").classList.add("hide-warning")
 }
